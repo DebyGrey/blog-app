@@ -52,6 +52,9 @@ gem 'bootsnap', require: false
 gem 'rubocop', '>= 1.0', '< 2.0'
 
 group :development, :test do
+  gem 'factory_bot_rails'
+  gem 'rspec-rails'
+  gem 'shoulda-matchers' # If you are using shoulda-matchers
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem 'debug', platforms: %i[mri mingw x64_mingw]
 end
