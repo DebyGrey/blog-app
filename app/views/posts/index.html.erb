@@ -29,7 +29,9 @@
       </div>
     </a></li>
   <% end %>
-  <a href="<%= users_path() %>" class="pagination">
-    <button id="pagination">pagination</button>
+  <%# users_path() %>
+
+  <a href="<%= new_user_post_path(@user, @post) %>" class="pagination">
+    <button id="pagination">Create a new post</button>
   </a>
 <ul>
