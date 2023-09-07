@@ -17,6 +17,7 @@
 ul {
   padding: 0;
   margin: 0;
+  list-style-type: none;
 }
 
 a {
@@ -30,18 +31,34 @@ a {
 }
 
 .user-photo {
-  width: 4rem;
+  /* width: 4rem;
   height: 4rem;
   background-color: #f0f0f0;
   border: 1px solid #ccc;
+  border-radius: 5px; */
+  width: 4rem;
+  background-color: black;
   border-radius: 5px;
 }
 
+.d-flex {
+  display: flex;
+}
+
 .user-details {
+  /* width: 100%;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-left: 0.5rem; */
+  display: flex;
+  justify-content: space-between;
   width: 100%;
   background-color: #f0f0f0;
   border: 1px solid #ccc;
   border-radius: 5px;
+  text-align: center;
   padding: 10px;
   margin-left: 0.5rem;
 }
@@ -52,8 +69,8 @@ a {
 }
 
 .posts-count {
-  display: flex;
-  justify-content: flex-end;
+  /* display: flex;
+  justify-content: flex-end; */
   font-size: 14px;
 }
 
@@ -81,8 +98,8 @@ a {
 }
 
 #pagination {
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
   margin: 1rem auto;
   padding: 1rem;
 }
@@ -95,4 +112,12 @@ a {
   border: black solid 2px;
   padding: 0.5rem 0.5rem;
   margin-bottom: 1rem;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.center {
+  text-align: center;
 }
