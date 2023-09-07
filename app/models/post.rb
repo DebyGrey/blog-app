@@ -24,14 +24,6 @@ class Post < ApplicationRecord
   # Methods
   private
 
-  # def update_user_posts_counter
-  #   author.increment!(:posts_counter)
-  # end
-
-  # def recent_comments
-  #   comments.order(created_at: :desc).limit(5)
-  # end
-
   def increase_user_posts_counter
     author.increment!(:posts_counter)
   end

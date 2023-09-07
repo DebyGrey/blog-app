@@ -36,7 +36,7 @@ RSpec.feature 'User Show', type: :feature do
 
   scenario 'clicking a user post redirects to post show page' do
     visit user_path(user)
-    click_link 'second text' # Adjust this link text to match your actual post's content
+    click_link 'second text'
     expect(current_path).to eq(user_post_path(user, post2))
   end
 end

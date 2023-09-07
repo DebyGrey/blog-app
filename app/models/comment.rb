@@ -14,13 +14,7 @@ class Comment < ApplicationRecord
   after_destroy :decrement_post_comments_counter
 
   # Methods
-  # after_save :update_post_comments_counter
-
   private
-
-  # def update_post_comments_counter
-  #   post.increment!(:comments_counter)
-  # end
 
   def increase_post_comments_counter
     post.increment!(:comments_counter)

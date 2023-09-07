@@ -117,11 +117,6 @@ You can deploy this project:
 - GitHub: [@githubhandle](https://github.com/VaheStepanyan100)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/vahestepanyan/)
 
-👤 **Tetteh Kodjo-Sarso**
-
-- GitHub: [@githubhandle](https://github.com/Reggeditt)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/tksarso/)
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
