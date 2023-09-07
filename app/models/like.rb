@@ -1,10 +1,11 @@
 class Like < ApplicationRecord
   # Associations
   belongs_to :author, class_name: 'User', foreign_key: 'author_id'
-  belongs_to :post
+  belongs_to :post, class_name: 'Post'
 
   # Methods
   after_save :update_post_likes_counter
+  after_destroy :update_post_likes_counter
 
   private
 
