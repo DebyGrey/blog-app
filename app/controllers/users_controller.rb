@@ -1,8 +1,8 @@
 class UsersController < ApplicationController
+  before_action :authenticate_user!, only: [:show]
   before_action :find_user, only: [:show]
 
   def index
-    # @users = User.all
     @users = User.includes(:posts).all
   end
 
