@@ -14,6 +14,10 @@
  *= require_self
  */
 
+body {
+  box-sizing: border-box;
+}
+
 ul {
   padding: 0;
   margin: 0;
@@ -31,11 +35,6 @@ a {
 }
 
 .user-photo {
-  /* width: 4rem;
-  height: 4rem;
-  background-color: #f0f0f0;
-  border: 1px solid #ccc;
-  border-radius: 5px; */
   width: 4rem;
   background-color: black;
   border-radius: 5px;
@@ -46,12 +45,6 @@ a {
 }
 
 .user-details {
-  /* width: 100%;
-  background-color: #f0f0f0;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 10px;
-  margin-left: 0.5rem; */
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -69,8 +62,6 @@ a {
 }
 
 .posts-count {
-  /* display: flex;
-  justify-content: flex-end; */
   font-size: 14px;
 }
 
@@ -98,8 +89,6 @@ a {
 }
 
 #pagination {
-  /* display: flex;
-  justify-content: center; */
   margin: 1rem auto;
   padding: 1rem;
 }
@@ -120,4 +109,12 @@ a {
 
 .center {
   text-align: center;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.v-hidden {
+  visibility: hidden;
 }

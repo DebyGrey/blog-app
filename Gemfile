@@ -51,6 +51,12 @@ gem 'bootsnap', require: false
 # Get Rubocop
 gem 'rubocop', '>= 1.0', '< 2.0'
 
+# Get Devise
+gem 'devise', '~> 4.9'
+
+# Get .ENV-RAILS
+gem 'dotenv-rails', groups: %i[development test]
+
 group :development, :test do
   gem 'factory_bot_rails'
   gem 'rails-controller-testing'
