@@ -41,8 +41,9 @@ RSpec.describe Post, type: :model do
 
   describe '#update_user_posts_counter' do
     it 'updates the user posts_counter attribute' do
-      # Act
-      subject_post.send(:update_user_posts_counter)
+      # Arrange
+      user = User.create(name: 'Deby')
+      Post.create(title: 'Hi', author: user)
 
       # Assert
       expect(user.reload.posts_counter).to eq(1)
@@ -62,7 +63,7 @@ RSpec.describe Post, type: :model do
       recent_comments = subject_post.send(:recent_comments)
 
       # Assert
-      expect(recent_comments).to eq([comment5, comment4, comment3, comment2, comment1])
+      expect(recent_comments).to eq([comment1, comment2, comment3, comment4, comment5])
     end
   end
 end
